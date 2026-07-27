@@ -12,8 +12,5 @@ def binary_search(arr, target):
     return -1 
 arr = [10, 20, 30, 40, 50, 60, 70]
 target = 50
-result = binary_search(arr, target)
-if result != -1:
-    print(f"Element found at index {result}")
-else:
-    print("Element not found")
+result = binary_search()
+print(result)
