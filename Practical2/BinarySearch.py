@@ -1,6 +1,6 @@
-def binary_search(arr, target):
+def binary_search(arr, n,target):
     left = 0
-    right = len(arr) - 1
+    right = n - 1
     while left <= right:
         mid = (left + right) // 2
         if arr[mid] == target:
@@ -10,7 +10,8 @@ def binary_search(arr, target):
         else:
             right = mid - 1
     return -1 
-arr = [10, 20, 30, 40, 50, 60, 70]
-target = 50
-result = binary_search()
+arr = [2, 4, 6, 8, 10, 12, 14]
+target = 10
+n=len(arr)
+result = binary_search(arr,n, target)
 print(result)
